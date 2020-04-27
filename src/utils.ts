@@ -55,7 +55,7 @@ export function lookupPackage(root: GrpcObject, packageName: string) {
 
 export function protoLoad(protoPath: string) {
   return protoLoader.loadSync(protoPath, {
-    keepCase: true,
+    keepCase: false,
     defaults: true,
     oneofs: true,
   });
