@@ -27,7 +27,8 @@
     "coverage": "jest --coverage",
     "watch": "tsc --watch",
     "format:check": "prettier --list-different \"{src,examples}/**/*.ts\"",
-    "format:apply": "prettier --write \"{src,examples}/**/*.ts\""
+    "format:apply": "prettier --write \"{src,examples}/**/*.ts\"",
+    "postinstall": "npm run build"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setup-jest"
